@@ -47,3 +47,51 @@ footer {
     left: 0;
     bottom: 0;
 }
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 30%;
+    border: 5px solid var(--main-color);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+.selected-image {
+    background-color: black;
+    border: 5px solid black;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.selected-image img {
+    width: 100%;
+    height: auto;
+}
