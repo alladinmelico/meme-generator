@@ -1,15 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { MemeContext } from '../MemeContext'
 
-const SelectedImage = (props) => {
-	let url = ''
-	if (props.url) {
-		url = props.url
-	} else if (typeof props.meme !== 'undefined') {
-		url = props.meme.url
-	}
+const SelectedImage = () => {
+	const [memes, setMemes] = useContext(MemeContext)
 	return (
 		<div className='selected-image'>
-			<img src={url} alt='' />
+			{memes.memeURL !== '' && <img src={memes.memeURL} alt='' />}
 		</div>
 	)
 }
